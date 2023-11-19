@@ -1,0 +1,20 @@
+spring:
+  # 对应 RedissonProperties 类
+  data:
+    redis:
+      host: 127.0.0.1 #127.0.0.1
+      port: 6379
+      #      password: lwt12345 # Redis 服务器密码，默认为空。生产中，一定要设置 Redis 密码！
+      database: 0 # Redis 数据库号，默认为 0 。
+      timeout: 1000 # Redis 连接超时时间，单位：毫秒。
+  #    redisson:
+  #      config: classpath:redisson.yml # 具体的每个配置项，见 org.redisson.config.Config 类。
+  # RabbitMQ 配置项，对应 RabbitProperties 配置类
+  rabbitmq:
+    host: 127.0.0.1 # RabbitMQ 服务的地址
+    port: 5672 # RabbitMQ 服务的端口
+    username: admin # RabbitMQ 服务的账号
+    password: admin # RabbitMQ 服务的密码
+websocket:
+  port: 7000 #端口
+  url: /msg #访问url
